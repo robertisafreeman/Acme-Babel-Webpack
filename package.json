@@ -1,12 +1,38 @@
 {
   "name": "acme-babel-webpack",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "npm run webpack:dev & nodemon server.js",
+    "webpack": "webpack",
+    "webpack:dev": "npm run webpack -- --watch --mode=development"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "babel/react"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertisafreeman/Acme-Babel-Webpack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/robertisafreeman/Acme-Babel-Webpack/issues"
+  },
+  "homepage": "https://github.com/robertisafreeman/Acme-Babel-Webpack#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
+  }
 }
