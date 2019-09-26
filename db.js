@@ -65,7 +65,7 @@ const syncAndSeed = async () =>{
   ];
   const [car, dog, cat] = await Promise.all(things.map(thing => Thing.create(thing)))
 }
-
+syncAndSeed();
 module.exports={
   syncAndSeed,
   model: {
