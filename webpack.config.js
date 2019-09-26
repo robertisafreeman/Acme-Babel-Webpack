@@ -7,10 +7,12 @@ module.exports={
     path: path.join(__dirname, 'assets')
   },
   module: {
-    rules: {
-      test: /\.js/,
+    rules: [
+      {
+      test: /\.js$/,
       loader: 'babel-loader',
       exclude: /node_modules/
     }
+  ]
   }
 }

@@ -1,4 +1,6 @@
-const { HashRouter, Link, NavLink, Route, Switch } = ReactRouterDOM;
+import { HashRouter, Link, NavLink, Route, Switch } from  'react-router-dom';
+import React from 'react';
+
 
       const People = ({ people })=> {
         return (
