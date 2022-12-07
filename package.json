@@ -26,7 +26,7 @@
   "homepage": "https://github.com/robertisafreeman/Acme-Babel-Webpack#readme",
   "description": "",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.18.2"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
